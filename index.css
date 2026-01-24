@@ -1,0 +1,16 @@
+a:hover {
+    color: rgb(0, 0, 0);
+    background-color: black;
+}
+button:hover {
+    color: blue;
+    background-color: yellow;
+}
+p {
+ font-family: "Courier New" , monospace;
+}
+
+.child{
+ float : right;
+ 
+}
