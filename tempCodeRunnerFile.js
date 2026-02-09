@@ -1,2 +1,1 @@
-
-bird.canFly = true;  
+console.log(obj)
