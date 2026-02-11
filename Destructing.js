@@ -1,3 +1,7 @@
+ const meal = ["soup", "steak", "ice cream"]
+    let [starter] = meal;
+    console.log(starter); //soup
+
 const products = [
     ["Laptop", 1000],
     ["Phone", 500],
