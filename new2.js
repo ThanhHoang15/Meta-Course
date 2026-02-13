@@ -14,7 +14,7 @@
 
         getLayers() {
             return super.getLayers() * 5;
-        }
+        }                               
     }
     var result = new WeddingCake();
     console.log(result.getLayers());
