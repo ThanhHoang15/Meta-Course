@@ -1,20 +1,11 @@
+const dishData = [
+    { name: "Italian pasta", price: 9.55 },
+    { name: "Rice with veggies", price: 8.65 },
+    { name: "Chicken with potatoes", price: 15.55 },
+    { name: "Vegetarian Pizza", price: 6.45 },
+];
 
-    class Cake {
-        constructor(lyr) {
-            this.layers = lyr;
-        }
-        getLayers() {
-            return this.layers;
-        }
-    }
-    class WeddingCake extends Cake {
-        constructor() {
-            super(2);
-        }
+console.log(typeof 5);
 
-        getLayers() {
-            return super.getLayers() * 5;
-        }                               
-    }
-    var result = new WeddingCake();
-    console.log(result.getLayers());
+const [me,you] = dishData
+console.log(me["name"]);
