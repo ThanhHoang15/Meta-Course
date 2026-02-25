@@ -19,5 +19,6 @@ if (arg){
 else{
     console.log(dishWithNoTax)
 }
+console.log(dishWithNoTax["Italian pasta Price (excl.tax)"])
 }
 restaurant (true);
