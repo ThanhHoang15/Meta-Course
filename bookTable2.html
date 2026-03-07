@@ -34,13 +34,20 @@
             <select name="" id="">
                 <option value="Uptown"> uptown</option>
                 <option value="Downtown">downtown</option>
-            </select>
-
-           
+            </select>       
         </div>
         <textarea name="response" rows="10" cols="30" maxlength=”200”> 
         </textarea>
+        <fieldset> 
+            <legend>Personal Info</legend> 
+            <label for="fname">First name:</label><br> 
+            <input type="text" id="fname" name="fname" value="John"><br> 
+            <label for="lname">Last name:</label><br> 
+            <input type="text" id="lname" name="lname" value="Doe"><br> 
+        </fieldset> 
         <div>
+            <button type="button" onclick="alert('You just clicked!')">Click Me! 
+            </button> 
             <button type="submit">Book table</button>
         </div>
     </form>
