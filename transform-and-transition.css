@@ -1,0 +1,11 @@
+.a{
+    display: inline-block;
+    transform: skewX(50deg);            /*this is like stretching */
+    background-color: beige;
+}
+
+.b{
+  display: inline-block;
+  transform: rotate(90deg);             /*this rotate to the right 90 degree */
+  background-color: yellow;
+}
