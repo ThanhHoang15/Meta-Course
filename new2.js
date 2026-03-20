@@ -1,11 +1,4 @@
-const dishData = [
-    { name: "Italian pasta", price: 9.55 },
-    { name: "Rice with veggies", price: 8.65 },
-    { name: "Chicken with potatoes", price: 15.55 },
-    { name: "Vegetarian Pizza", price: 6.45 },
-];
 
-console.log(typeof 5);
-
-const [me,you] = dishData
-console.log(me["name"]);
+var result;
+console.log(result);
+result = 7;
