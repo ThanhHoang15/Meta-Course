@@ -4,8 +4,9 @@
 }
 
 .row .label {
-    flex: 0 0 auto;
+    flex: 0 0 auto; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#00008b;
 }
 
 .row .container {
@@ -20,7 +21,7 @@
     align-items: center;
 }
 .pasta {
-    background-color: aquamarine;
+    background-color: #7fffd4;
 }
 .pizza{
     background-color: blueviolet;

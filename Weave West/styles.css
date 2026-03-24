@@ -1,0 +1,75 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+}
+.announcement{
+    background-color: rgb(73, 59, 59);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0.5rem;
+}
+
+.header-container{
+    display: flex;
+    margin: auto;
+    padding: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.top-navigation{
+    display: flex;
+    flex: 1;
+    gap: 1rem;
+    margin: 0;
+    padding: 0;
+    justify-content: center;                   
+    flex-wrap: wrap;
+
+}
+.top-icons{
+    display: flex;
+    gap: 1.5rem;
+    margin-right: 100px;
+    flex-wrap: wrap;
+}
+.logo-image{
+    height: 40px; 
+}
+
+
+ul{
+    display: flex;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    
+}
+.men-clothes{
+    position: relative;
+}
+
+/* top: 0 --> The dropdown’s top edge = same as parent’s top --> overlaps the parent */
+/*  top: 100% -->  Move down by 100% of the parent’s height --> starts right below the parent */
+
+
+.men-dropdown-menu{
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background: white;
+      padding: 10px 0;
+      position: absolute;
+}
+
+.men-clothes:hover .men-dropdown-menu{
+    display: block;
+}
+
