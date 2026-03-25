@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Click Search Icon</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    .search-box {
+      position: relative;
+      width: 60px;
+    }
+
+    /* hide checkbox */
+    #toggle-search {
+      display: none;
+    }
+
+    /* when clicked, show input */
+    #toggle-search:checked ~ .search-input {
+      width: 200px;
+      opacity: 1;
+      padding: 0 12px;
+    }
+
+    /* search icon button */
+    .search-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      font-size: 22px;
+      background: white;
+    }
+
+    /* input hidden at first */
+    .search-input {
+      width: 0;
+      opacity: 0;
+      padding: 0;
+      border: 1px solid #333;
+      height: 45px;
+      font-size: 16px;
+      outline: none;
+      transition: all 0.3s ease;
+      position: absolute;
+      left: 50px;
+      top: 0;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <div class="search-box">
+    <label for="toggle-search" class="search-icon">🔍︎</label>
+    <input type="checkbox" id="toggle-search">
+    <input type="text" class="search-input" placeholder="Search our store">
+
+
+  </div>
+
+</body>
+</html>
