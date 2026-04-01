@@ -1,0 +1,167 @@
+* {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.announcement{
+    background-color: rgb(73, 59, 59);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0.5rem;
+    
+}
+.logo-image{
+  width: 50px;
+  margin: 5px;
+}
+
+/* align-items: center --> this is in parent --> make the texts in the box of align  */
+.header-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+
+/*.header-container > * --> all childeren of header-container  */
+/* Take all space → split equally between children, flex: 1 = flex: 1 1 0%; --> 0% mean start at 0% --> 1 1 mean grown and shrink equally*/
+.header-container > * {
+  flex: 1;
+ 
+}
+
+header {
+  
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav {
+  
+  display: flex;
+  justify-content: center;
+}
+
+.top-icons {
+  
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+
+.top-navigation{
+    gap: 1rem;
+ 
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0; 
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+    
+}
+.men-clothes{
+    position: relative;
+}
+li ul li a{
+  color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+
+}
+
+/* top: 0 --> The dropdown’s top edge = same as parent’s top --> overlaps the parent */
+/*  top: 100% -->  Move down by 100% of the parent’s height --> starts right below the parent */
+
+
+.men-dropdown-menu{
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background:none;
+      padding: 10px 0;
+      position: absolute;
+      border-radius: 5px;
+    
+}
+
+.men-clothes:hover .men-dropdown-menu{
+    display: block;
+}
+
+
+/* object-fit: cover --> normalize the image otherwise it will be distorted when resized*/
+/* object-fit: contain --> Show the entire image inside the box without cutting anything*/
+
+.cover-photo{
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  min-width: 500px;
+  object-fit: cover;
+}
+
+.discount-30{
+  position: absolute;
+  top: 35%; 
+}
+.head-30{
+  color: white;
+  font-size: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8); 
+}
+
+p {
+  max-width: 300px;
+  line-height: 1.2;    /* better spacing */
+  color: white;
+  margin: 5px;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+
+@media (min-width: 768px){
+  .header-container{
+      display: flex;
+      margin: auto;
+      padding: 1rem;
+      gap: 1rem;
+  }
+
+  .head-30{
+    font-size: 80px;
+  
+  }
+
+  p {
+    max-width: 600px;
+    line-height: 1.2;    /* better spacing */
+    margin: 8px;
+  }
+  .top-icons {
+    gap: 1rem;
+  }
+  *{
+    font-size: 18px;
+  }
+  .logo-image{
+    width: 100px;
+}
+
+}
