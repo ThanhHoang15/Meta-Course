@@ -7,10 +7,9 @@ import ModeToggler from './ModeToggler.jsx'
 import GuessOneToThree from './GuessOneToThree.jsx'
 import InputAndOnChange from './InputAndOnChange.jsx'
 import RegisterForm from './RegisterForm.jsx'
+import TextInputWithFocusButton from './TextInputWithFocusButton.jsx'
+import CountOne from './CountOne.jsx'
 
-export function Header(){
-  return <h1>HELLO</h1>
-}
 
 function App() {
 return(
@@ -20,7 +19,8 @@ return(
     <GuessOneToThree/>
     <InputAndOnChange/>
     <div><RegisterForm/></div>
-
+    <TextInputWithFocusButton/>
+    <CountOne/>
   </div>
 )
 }
