@@ -12,3 +12,7 @@ export default function TextInputWithFocusButton() {
     </>
   );
 }
+
+//Note:
+//inputEl.current --> access whatever element/value the ref is connected to right now --> this case: input
+//inputEl.current.focus() --> put | in the input so user is ready to type

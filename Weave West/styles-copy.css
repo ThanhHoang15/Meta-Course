@@ -28,8 +28,9 @@
 }
 
 
-/*.header-container > * --> all childeren of header-container  */
-/* Take all space → split equally between children, flex: 1 = flex: 1 1 0%; --> 0% mean start at 0% --> 1 1 mean grown and shrink equally*/
+/*.header-container > * --> all children of header-container  */
+/* Take all space → split equally between children, flex: 1 = flex: 1 1 0%; --> 0% (flex-basis) → start size is 0, so all items divide space evenly*/
+
 .header-container > * {
   flex: 1;
  
@@ -88,7 +89,6 @@ li ul li a{
 
 .men-dropdown-menu{
       display: none;
-      position: absolute;
       top: 100%;
       left: 0;
       background:none;
